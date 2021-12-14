@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Raspberry Pi Weather Station</title>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/imageCSS.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        body {
+        background-image: url("../templates/images/extremeweather.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        }
+
+        h1, h3, h4 {
+        text-align: center;
+        }
+
+        table{
+            opacity: 80%;
+            margin-top:20px;
+            margin-left:270px;
+        }
+
+        tr, td, th{
+            color: black;
+            border-bottom: 0.5px solid black;
+            border-left: 00.5px dotted black;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1 class = "w3-center">Raspberry Pi Weather Station</h1>
+<h3>Natalia Palej A00279259</h3>
+<h4>Software Design with Artificial Intelligence for Cloud Computing</h4>
+
+<div class = "w3-center">
+<table class = "w3-table-all w3-stripped" style = "width:1000px;">
+<tr>
+    <th colspan = "2" class = "w3-xlarge w3-center">Temperature:</th>
+</tr>
+<tr>
+   <th>Celsius: </th> 
+   <td class = "w3-center">{{celsius}}</td>
+</tr>
+
+<tr>
+    <th>Fahrenheit: </th> 
+    <td class = "w3-center">{{fahrenheit}}</td> 
+
+</tr>
+<tr>
+    <th>Humidity: </th> 
+    <td class = "w3-center">{{humidity}}</td>
+</tr>
+
+<tr>
+    <th>Pressure: </th>
+    <td class = "w3-center">{{pressure}}</td>
+</tr>
+</table>
+</div>
+
+
+</body>
+</html>
